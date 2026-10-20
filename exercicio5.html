@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+let primo = true;
+
+if (numero < 2) {
+    primo = false;
+} else {
+    for (let i = 2; i <= Math.sqrt(numero); i++) {
+        if (numero % i === 0) {
+            primo = false;
+            break;
+        }
+    }
+}
+
+if (primo) {
+    alert("O número é primo.");
+} else {
+    alert("O número não é primo.");
+}
+
+    </script>
+</body>
+</html>
